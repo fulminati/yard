@@ -6,6 +6,6 @@
 cd /home/yard
 git clone https://github.com/fulminati/yard
 mv yard/.git ./
-rm yard
+rm -fr yard
 git pull
 ```
