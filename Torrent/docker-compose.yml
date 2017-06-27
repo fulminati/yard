@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+
+  films:
+    image: linuxserver/transmission
+    ports: 
+    - "9091:9091"
+    - "51413:51413"
+    volumes:
+    - ./films/config:/config:rw
+    - ./films/downloads:/downloads:rw
+    environment:
+    - PUID=1000
+    - PGID=1000
+
+  games:
+    image: linuxserver/transmission
+    ports:
+    - "9092:9091"
+    - "51414:51413"
+    volumes:
+    - ./games/config:/config:rw
+    - ./games/downloads:/downloads:rw
+    environment:
+    - PUID=1000
+    - PGID=1000
