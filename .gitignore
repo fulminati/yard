@@ -2,6 +2,20 @@
 Develop/
 !Develop/.gitkeep
 
+# Torrent
+Torrent/films/downloads/
+!Torrent/films/downloads/.gitkeep
+Torrent/films/config/resume/
+!Torrent/films/config/resume/.gitkeep
+Torrent/films/config/torrents/
+!Torrent/films/config/torrents/.gitkeep
+Torrent/games/downloads/
+!Torrent/games/downloads/.gitkeep
+Torrent/games/config/resume/
+!Torrent/games/config/resume/.gitkeep
+Torrent/games/config/torrents/
+!Torrent/games/config/torrents/.gitkeep
+
 # Others
 .idea/
 .cache/
