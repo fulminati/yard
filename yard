@@ -1,0 +1,20 @@
+#!/bin/bash
+
+function yard_main() {
+    case "$1" in
+        mount) yard_mount $2 ;;
+        umount) yard_umount $2 ;;
+        *) echo "Expected command." ;;
+    esac
+}
+
+function yard_mount() {
+    mkdir -p $HOME/Yard$1 >/dev/null 2>&1
+    echo "YardCode" | sshfs yard@yard$1:/home/yard $HOME/Yard$1 -o password_stdin
+}
+
+function yard_umount() {
+    sudo umount $HOME/Yard$1
+}
+
+yard_main $1 $2
