@@ -2,5 +2,5 @@
 
 git pull
 git add *
-git commit -m "yeah!"
+git commit -a -m "yeah!"
 git push
