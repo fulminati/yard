@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git config user.email "you@example.com"
 git pull
 git add .
 git add *
