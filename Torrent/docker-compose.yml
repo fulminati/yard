@@ -17,8 +17,8 @@ services:
   games:
     image: linuxserver/transmission
     ports:
-    - "9092:9091"
-    - "51414:51413"
+    - "9092:9092"
+    - "51414:51414"
     volumes:
     - ./games/config:/config:rw
     - ./games/downloads:/downloads:rw
