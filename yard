@@ -2,10 +2,15 @@
 
 function yard_main() {
     case "$1" in
+        ssh) yard_ssh $2 ;;
         mount) yard_mount $2 ;;
         umount) yard_umount $2 ;;
         *) echo "Expected command." ;;
     esac
+}
+
+function yard_ssh() {
+    sshpass -p "YardCode" ssh yard@yard$1
 }
 
 function yard_mount() {
