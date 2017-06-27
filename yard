@@ -17,4 +17,4 @@ function yard_umount() {
     sudo umount $HOME/Yard$1
 }
 
-yard_main $1 $2
+yard_main $1 $2 $3
