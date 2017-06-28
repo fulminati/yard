@@ -43,7 +43,7 @@
     "rpc-authentication-required": true,
     "rpc-bind-address": "0.0.0.0",
     "rpc-enabled": true,
-    "rpc-password": "{1ddd3f1f6a71d655cde7767242a23a575b44c909n5YuRT.f",
+    "rpc-password": "powermetal",
     "rpc-port": 9092,
     "rpc-url": "/games/",
     "rpc-username": "games",
