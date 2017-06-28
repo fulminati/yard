@@ -3,10 +3,12 @@
 function yard_main() {
     case "$1" in
         ssh) yard_ssh $2 ;;
+        bash) yard_ssh $2 ;;
         mount) yard_mount $2 ;;
         umount) yard_umount $2 ;;
         mount-secret) yard_mount_secret $2 ;;
         umount-secret) yard_umount_secret $2 ;;
+        exit
         *) echo "Expected command." ;;
     esac
 }
