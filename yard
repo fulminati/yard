@@ -6,7 +6,7 @@ function yard_main() {
         mount) yard_mount $2 ;;
         umount) yard_umount $2 ;;
         mount-secret) yard_mount_secret $2 ;;
-        umount-secret) yard_mount_secret $2 ;;
+        umount-secret) yard_umount_secret $2 ;;
         *) echo "Expected command." ;;
     esac
 }
