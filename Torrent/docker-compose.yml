@@ -21,7 +21,7 @@ services:
     - "51414:51414"
     volumes:
     - ./games/config:/config:rw
-    - ./games/downloads:/downloads:rw
+    - ../../.secret/downloads:/downloads:rw
     environment:
     - PUID=1000
     - PGID=1000
