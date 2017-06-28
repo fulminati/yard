@@ -12,7 +12,7 @@ function yard_main() {
 }
 
 function yard_ssh() {
-    sshpass -p "YardCode" ssh yard@yard$1
+    sshpass -p "YardCode" ssh yard@yard$1 -t "clear; bash"
 }
 
 function yard_mount() {
