@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir /home/.secret
-chown yard:yard /home/.secret -R
-touch /home/.secret/SECRET.txt
+sudo mkdir /home/.secret
+sudo touch /home/.secret/SECRET.txt
+sudo chown yard:yard /home/.secret -R
