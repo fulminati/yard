@@ -22,6 +22,7 @@ function yard_mount() {
 
 function yard_umount() {
     sudo umount $HOME/Yard$1
+    sudo rmdir $HOME/Yard$1
 }
 
 function yard_mount_secret() {
@@ -31,6 +32,7 @@ function yard_mount_secret() {
 
 function yard_umount_secret() {
     sudo umount $HOME/Yard$1-secret
+    sudo rmdir $HOME/Yard$1-secret
 }
 
 yard_main $1 $2 $3
