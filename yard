@@ -18,7 +18,7 @@ function yard_ssh() {
 
 function yard_mount() {
     mkdir -p $HOME/Yard$1 >/dev/null 2>&1
-    echo "YardCode" | sshfs yard@yard$1:/home/yard $HOME/Yard$1 -o password_stdin
+    echo "YardCode" | sshfs yard@yard$1:/home/yard $HOME/Yard$1 -o password_stdin -o nonempty
 }
 
 function yard_umount() {
@@ -28,7 +28,7 @@ function yard_umount() {
 
 function yard_mount_secret() {
     mkdir -p $HOME/Yard$1-secret >/dev/null 2>&1
-    echo "YardCode" | sshfs yard@yard$1:/home/.secret $HOME/Yard$1-secret -o password_stdin
+    echo "YardCode" | sshfs yard@yard$1:/home/.secret $HOME/Yard$1-secret -o password_stdin -o nonempty
 }
 
 function yard_umount_secret() {
